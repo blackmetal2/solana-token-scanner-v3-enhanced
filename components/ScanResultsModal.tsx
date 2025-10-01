@@ -89,7 +89,7 @@ export default function ScanResultsModal({
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
               >
-                <div className="glass rounded-2xl p-6 sm:p-8 shadow-2xl border-2 border-[#14F195]/30 mx-4">
+                <div className="glass rounded-2xl p-6 sm:p-8 shadow-2xl border-2 border-solana-green/30 mx-4">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-6">
                     <Dialog.Title className="text-2xl font-bold text-white">
@@ -115,7 +115,7 @@ export default function ScanResultsModal({
                   {loading ? (
                     <div className="flex flex-col items-center justify-center py-12">
                       <svg
-                        className="animate-spin h-12 w-12 text-[#14F195] mb-4"
+                        className="animate-spin h-12 w-12 text-solana-green mb-4"
                         fill="none"
                         viewBox="0 0 24 24"
                       >
@@ -286,7 +286,7 @@ export default function ScanResultsModal({
                           href={tokenData.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 py-3 bg-gradient-to-r from-[#14F195] to-[#00D18C] hover:from-[#00D18C] hover:to-[#14F195] text-black font-semibold rounded-lg transition-all duration-300 text-center"
+                          className="flex-1 py-3 bg-gradient-to-r from-solana-green to-safe hover:from-safe hover:to-solana-green text-black font-semibold rounded-lg transition-all duration-300 text-center"
                         >
                           View on DexScreener
                         </a>

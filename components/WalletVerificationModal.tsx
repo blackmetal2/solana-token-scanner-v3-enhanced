@@ -96,7 +96,7 @@ export default function WalletVerificationModal({
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
               >
-                <div className="glass rounded-2xl p-6 sm:p-8 shadow-2xl border-2 border-[#14F195]/30 mx-4">
+                <div className="glass rounded-2xl p-6 sm:p-8 shadow-2xl border-2 border-solana-green/30 mx-4">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div>
@@ -125,10 +125,10 @@ export default function WalletVerificationModal({
                   </div>
 
                   {/* Info Banner */}
-                  <div className="mb-6 p-4 bg-[#14F195]/10 border border-[#14F195]/30 rounded-lg">
+                  <div className="mb-6 p-4 bg-solana-green/10 border border-solana-green/30 rounded-lg">
                     <div className="flex gap-3">
                       <svg
-                        className="w-5 h-5 text-[#14F195] flex-shrink-0 mt-0.5"
+                        className="w-5 h-5 text-solana-green flex-shrink-0 mt-0.5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -170,7 +170,7 @@ export default function WalletVerificationModal({
                         key={wallet.name}
                         onClick={() => handleConnect(wallet.name)}
                         disabled={connecting}
-                        className="group relative w-full p-4 bg-neutral-800/50 hover:bg-neutral-800 border border-neutral-700 hover:border-[#14F195]/50 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="group relative w-full p-4 bg-neutral-800/50 hover:bg-neutral-800 border border-neutral-700 hover:border-solana-green/50 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-4">
@@ -193,7 +193,7 @@ export default function WalletVerificationModal({
 
                           {connecting ? (
                             <svg
-                              className="animate-spin h-5 w-5 text-[#14F195]"
+                              className="animate-spin h-5 w-5 text-solana-green"
                               fill="none"
                               viewBox="0 0 24 24"
                             >
@@ -213,7 +213,7 @@ export default function WalletVerificationModal({
                             </svg>
                           ) : (
                             <svg
-                              className="w-5 h-5 text-neutral-400 group-hover:text-[#14F195] transition-colors"
+                              className="w-5 h-5 text-neutral-400 group-hover:text-solana-green transition-colors"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke="currentColor"
@@ -234,7 +234,7 @@ export default function WalletVerificationModal({
                   {/* Footer */}
                   <p className="mt-6 text-xs text-center text-neutral-500">
                     By connecting, you agree to our{' '}
-                    <button className="text-[#14F195] hover:underline">
+                    <button className="text-solana-green hover:underline">
                       Terms of Service
                     </button>
                   </p>

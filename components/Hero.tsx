@@ -50,7 +50,7 @@ export default function Hero() {
         {Array.from({ length: 20 }).map((_, i) => (
           <motion.div
             key={i}
-            className="absolute bg-[#14F195]/20 rounded-full backdrop-blur-sm"
+            className="absolute bg-solana-green/20 rounded-full backdrop-blur-sm"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -73,7 +73,7 @@ export default function Hero() {
 
       {/* Gradient Blobs */}
       <motion.div
-        className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-br from-[#14F195]/20 to-[#00D18C]/20 rounded-full blur-3xl"
+        className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-br from-solana-green/20 to-safe/20 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -109,7 +109,7 @@ export default function Hero() {
         >
           {/* Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#14F195]/10 border border-[#14F195]/30 text-[#14F195] text-sm font-medium mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-solana-green/10 border border-solana-green/30 text-solana-green text-sm font-medium mb-6"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
@@ -147,7 +147,7 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
           >
             Free instant token safety check. No wallet needed to browse.{' '}
-            <span className="text-[#14F195] font-semibold">500K+ tokens</span>{' '}
+            <span className="text-solana-green font-semibold">500K+ tokens</span>{' '}
             analyzed.
           </motion.p>
 
@@ -191,7 +191,7 @@ export default function Hero() {
         }}
       >
         <svg
-          className="w-6 h-6 text-[#14F195]"
+          className="w-6 h-6 text-solana-green"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

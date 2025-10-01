@@ -32,8 +32,8 @@ export default function Header({ onTryNowClick }: HeaderProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#14F195] to-[#00D18C] rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <div className="relative w-10 h-10 bg-gradient-to-br from-[#14F195] to-[#00D18C] rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-safe rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity"></div>
+              <div className="relative w-10 h-10 bg-gradient-to-br from-solana-green to-safe rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-lg">S</span>
               </div>
             </div>
@@ -48,10 +48,10 @@ export default function Header({ onTryNowClick }: HeaderProps) {
             className="group relative inline-flex items-center gap-2 px-6 py-2.5 rounded-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105"
           >
             {/* Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#14F195] to-[#00D18C] transition-all duration-300 group-hover:from-[#00D18C] group-hover:to-[#14F195]"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-safe transition-all duration-300 group-hover:from-safe group-hover:to-solana-green"></div>
 
             {/* Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#14F195]/20 to-[#00D18C]/20 blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-solana-green/20 to-safe/20 blur-xl group-hover:blur-2xl transition-all duration-300"></div>
 
             {/* Text */}
             <span className="relative z-10 text-black font-semibold">Try Now</span>

@@ -39,7 +39,7 @@ export default function TokenScanner({ onScan }: TokenScannerProps) {
           {/* Scanner Card */}
           <div className="glass rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/10">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#14F195] to-[#00D18C] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-solana-green to-safe flex items-center justify-center">
                 <svg
                   className="w-5 h-5 text-black"
                   fill="none"
@@ -73,7 +73,7 @@ export default function TokenScanner({ onScan }: TokenScannerProps) {
                   onChange={(e) => setAddress(e.target.value)}
                   onKeyPress={handleKeyPress}
                   placeholder="Enter token address (e.g., So11111...)"
-                  className="w-full px-4 py-3 sm:py-4 bg-neutral-800/50 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-[#14F195] focus:ring-2 focus:ring-[#14F195]/20 transition-all"
+                  className="w-full px-4 py-3 sm:py-4 bg-neutral-800/50 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-solana-green focus:ring-2 focus:ring-solana-green/20 transition-all"
                   disabled={isLoading}
                 />
                 {address && (
@@ -104,10 +104,10 @@ export default function TokenScanner({ onScan }: TokenScannerProps) {
                 className="group relative px-8 py-3 sm:py-4 rounded-xl font-semibold overflow-hidden transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 disabled:hover:scale-100"
               >
                 {/* Background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#14F195] to-[#00D18C] transition-all duration-300 group-hover:from-[#00D18C] group-hover:to-[#14F195]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-safe transition-all duration-300 group-hover:from-safe group-hover:to-solana-green"></div>
 
                 {/* Glow */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#14F195]/50 to-[#00D18C]/50 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-solana-green/50 to-safe/50 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Content */}
                 <span className="relative z-10 flex items-center gap-2 text-black">
@@ -159,7 +159,7 @@ export default function TokenScanner({ onScan }: TokenScannerProps) {
             {/* Info */}
             <div className="mt-4 flex items-start gap-2 text-sm text-neutral-400">
               <svg
-                className="w-5 h-5 flex-shrink-0 text-[#14F195] mt-0.5"
+                className="w-5 h-5 flex-shrink-0 text-solana-green mt-0.5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

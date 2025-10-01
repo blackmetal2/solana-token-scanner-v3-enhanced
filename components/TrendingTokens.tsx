@@ -74,7 +74,7 @@ export default function TrendingTokens({ onTokenClick }: TrendingTokensProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => onTokenClick(token.baseToken.address)}
-                className="group glass rounded-xl p-6 cursor-pointer hover:border-[#14F195]/30 transition-all duration-300 hover:scale-105"
+                className="group glass rounded-xl p-6 cursor-pointer hover:border-solana-green/30 transition-all duration-300 hover:scale-105"
               >
                 {/* Token Symbol */}
                 <div className="flex items-center justify-between mb-4">
@@ -82,11 +82,11 @@ export default function TrendingTokens({ onTokenClick }: TrendingTokensProps) {
                     ${token.baseToken.symbol}
                   </h3>
                   {token.priceChange.h24 > 0 ? (
-                    <span className="text-[#00D18C] text-sm font-semibold">
+                    <span className="text-safe text-sm font-semibold">
                       +{token.priceChange.h24.toFixed(2)}%
                     </span>
                   ) : (
-                    <span className="text-[#FF4747] text-sm font-semibold">
+                    <span className="text-danger text-sm font-semibold">
                       {token.priceChange.h24.toFixed(2)}%
                     </span>
                   )}
@@ -123,9 +123,9 @@ export default function TrendingTokens({ onTokenClick }: TrendingTokensProps) {
 
                 {/* Hover Effect */}
                 <div className="mt-4 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-xs text-[#14F195]">Click to scan</span>
+                  <span className="text-xs text-solana-green">Click to scan</span>
                   <svg
-                    className="w-4 h-4 text-[#14F195] transform group-hover:translate-x-1 transition-transform"
+                    className="w-4 h-4 text-solana-green transform group-hover:translate-x-1 transition-transform"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
