@@ -1,24 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-
-  /* Solana Colors */
-  --solana-green: #14F195;
-  --solana-purple: #9945FF;
-  --brand-green: #22c55e;
-  --safe: #00D18C;
-  --danger: #FF4747;
-
-  /* Neutral Palette */
-  --neutral-950: #0a0a0a;
-  --neutral-900: #171717;
-  --neutral-800: #262626;
-  --neutral-700: #404040;
-}
+@import "tailwindcss";
 
 * {
   box-sizing: border-box;
@@ -30,44 +10,30 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: #0a0a0a;
+  color: #ededed;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@layer utilities {
-  /* Gradient Text Utility */
-  .gradient-text {
-    background: linear-gradient(135deg, var(--solana-green), var(--safe));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+/* Gradient Text Utility */
+.gradient-text {
+  background: linear-gradient(135deg, #14F195, #00D18C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  /* Glassmorphism Effect */
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* Animation Classes */
-  .animate-pulse-glow {
-    animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-blink {
-    animation: blink 1s step-end infinite;
-  }
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Scrollbar Styling */
@@ -76,16 +42,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--neutral-900);
+  background: #171717;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--neutral-700);
+  background: #404040;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--solana-green);
+  background: #14F195;
 }
 
 /* Animation Keyframes */
@@ -114,4 +80,16 @@ body {
   50%, 100% {
     opacity: 0;
   }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }
